@@ -22,5 +22,21 @@ namespace Kontroleri_I_Akcije.Controllers
             return "<h2> Kontekstni podaci iz zahtjeva: <h2>" +
                 "<ul>" + "<li>" + serverName + "</li>" + "<li>" + datestamp.ToString() + "</li>" + "</ul>";
         }
+
+
+        public string MetodaSaParametrima(string id)
+        {
+            return "Pozdrav " + id + "!";
+        }
+
+         public string MetodaSaParametrima2(int? id)
+        {
+            return "Godina " + id.ToString() + "!";
+        }
+
+        public string MetodaSaParametrima3(int id=2018)
+        {
+            return "Godina " + id.ToString() + "!";
+        }
     }
 }
